@@ -10,11 +10,11 @@ int main(void)
 	int one;
 	int ten;
 	int o;
-	int t
+	int t;
 
 	for (ten = '0'; ten <= '9'; ten++)
 	{
-		for (ten = (one = '0'; one <= '9'; one++)
+		for (ten = (one = '0'); one <= '9'; one++)
 		{
 			for (t = ten; t <= '9'; t++)
 			{
