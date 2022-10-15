@@ -14,26 +14,28 @@ int main(void)
 
 	for (ten = '0'; ten <= '9'; ten++)
 	{
-		for (ten = (one = '0'); one <= '9'; one++)
+		for (one = '0'; one <= '9'; one++)
 		{
 			for (t = ten; t <= '9'; t++)
 			{
-				for (o = (one + 1); o <= '9'; o++)
+				for (o = '0'; o <= '9'; o++)
 				{
-					putchar(ten);
-					putchar(one);
-					putchar(' ');
-					putchar(t);
-					putchar(o);
-
-					if (!((ten == '9' && one == '8') &&
-						(t == '9' && o == '9')))
+					if ((one < o) || (ten < t))
 					{
-						putchar(',');
+						putchar(ten);
+						putchar(one);
 						putchar(' ');
+						putchar(t);
+						putchar(o);
+
+						if (!((ten == '9' && one == '8') &&
+							(t == '9' && o == '9')))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
-				one = one - 1;
 			}
 		}
 	}	
