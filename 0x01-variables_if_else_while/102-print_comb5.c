@@ -33,7 +33,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				one = '-1';
+				one = one - 1;
 			}
 		}
 	}	
