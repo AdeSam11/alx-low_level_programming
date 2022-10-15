@@ -18,25 +18,22 @@ int main(void)
 		{
 			for (t = ten; t <= '9'; t++)
 			{
-				for (o = one + 1; o <= '9'; o++)
+				for (o = (one + 1); o <= '9'; o++)
 				{
-					if (one < o)
-					{
-						putchar(ten);
-						putchar(one);
-						putchar(' ');
-						putchar(t);
-						putchar(o);
+					putchar(ten);
+					putchar(one);
+					putchar(' ');
+					putchar(t);
+					putchar(o);
 
-						if (!((ten == '9' && one == '8') &&
-							(t == '9' && o == '9')))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (!((ten == '9' && one == '8') &&
+						(t == '9' && o == '9')))
+					{
+						putchar(',');
+						putchar(' ');
 					}
 				}
-				o = '-1';
+				one = '-1';
 			}
 		}
 	}	
