@@ -28,8 +28,9 @@ int main(void)
 						putchar(t);
 						putchar(o);
 
-						if (!((ten == '9' && one == '8') 
-							&& (t == '9' && o == '9')))
+						if (!((ten == '9' && one == '8')
+							&&
+							(t == '9' && o == '9')))
 						{
 							putchar(',');
 							putchar(' ');
@@ -38,7 +39,7 @@ int main(void)
 				}
 			}
 		}
-	}	
+	}
 
 	putchar('\n');
 
