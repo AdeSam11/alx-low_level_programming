@@ -2,7 +2,7 @@
 
 /**
  * _islower - returns 1 if an alphabet is lower, 0 if otherwise
- *
+ * @c: The input alphabet to be checked
  * Return: Nothing
  */
 int _islower(int c)
@@ -16,5 +16,5 @@ int _islower(int c)
 			result = 1;
 	}
 
-	return result;
+	return (result);
 }
