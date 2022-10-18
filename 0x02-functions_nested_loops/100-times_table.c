@@ -37,7 +37,7 @@ void format_func(int n)
 		_putchar(' ');
 		_putchar(n + '0');
 	}
-	else if
+	else if (n > 9 && n <= 99)
 	{
 		_putchar(',');
 		_putchar(' ');
