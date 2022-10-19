@@ -6,6 +6,8 @@
  * @n: the input number
  * Return: Nothing
  */
+void format_func(int n);
+
 void print_times_table(int n)
 {
 	int i, j;
@@ -16,9 +18,7 @@ void print_times_table(int n)
 		{
 			_putchar('0');
 			for (j = 1; j <= n; j++)
-			{
-				void format_func(i * j);
-			}
+				format_func(i * j);
 			_putchar('\n');
 		}
 	}
