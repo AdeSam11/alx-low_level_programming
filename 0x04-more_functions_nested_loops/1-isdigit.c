@@ -8,11 +8,15 @@
 
 int _isdigit(int c)
 {
+	int i;
 	int result = 0;
 
-	if (_isalpha(c) == 0)
+	for (i = 0; i < 10; i++)
 	{
-		result = 1;
+		if (i == c)
+		{
+			result = 1;
+		}
 	}
 	return (result);
 }
